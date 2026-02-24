@@ -129,12 +129,14 @@
 
   
     
-    <asp:GridView ID="gvMedidores" runat="server" AutoGenerateColumns="False" DataKeyNames="Suscriptor" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="gvMedidores" runat="server" AutoGenerateColumns="False" DataKeyNames="Suscriptor" DataSourceID="SqlDataSource1" OnRowDeleting="gvMedidores_RowDeleting">
         <Columns>
             <asp:BoundField DataField="Suscriptor" HeaderText="Suscriptor" InsertVisible="False" ReadOnly="True" SortExpression="Suscriptor" />
             <asp:BoundField DataField="Medidor" HeaderText="Medidor" SortExpression="Medidor" />
             <asp:BoundField DataField="Ubicacion" HeaderText="Ubicacion" SortExpression="Ubicacion" />
             <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
+            <asp:CommandField showDeleteButton="true" />
+
         </Columns>
     </asp:GridView>
 

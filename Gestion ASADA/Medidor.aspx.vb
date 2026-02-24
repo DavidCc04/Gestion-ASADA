@@ -39,4 +39,19 @@ Public Class Medidor
         End If
         SwalUtils.ShowSwalError(Me, "El medidor no se ha creado.")
     End Sub
+
+    Protected Sub gvMedidores_RowDeleting(sender As Object, e As GridViewDeleteEventArgs)
+
+        e.Cancel = True
+
+        Dim Suscriptor As Integer = Convert.ToInt32(gvMedidores.DataKeys(e.RowIndex).Value)
+        Dim resultado = db.eliminarMedidor(Suscriptor)
+        If resultado Then
+            SwalUtils.ShowSwal(Me, "El medidor ha sido eliminado exitosamente.")
+            gvMedidores.DataBind()
+        Else
+            SwalUtils.ShowSwalError(Me, "El medidor no se ha eliminado.")
+        End If
+    End Sub
+
 End Class

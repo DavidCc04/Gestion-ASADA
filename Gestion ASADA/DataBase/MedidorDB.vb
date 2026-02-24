@@ -32,5 +32,13 @@ Public Class MedidorDB
         Return True
     End Function
 
+    Public Function eliminarMedidor(ByVal Medidor As Integer) As Boolean
+
+        Dim query As String = "DELETE FROM medidor WHERE Medidor = @Medidor"
+        Dim parameters As New Dictionary(Of String, Object) From {
+                {"@Medidor", Medidor}
+            }
+        Return db.ExecuteNonQuery(query, parameters)
+    End Function
 
 End Class
