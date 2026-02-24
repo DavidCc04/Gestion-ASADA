@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-
+ <%--          https://github.com/DavidCc04/Gestion-ASADA/commits/master/                 --%>
 
     <%--*************************   ID suscriptor    *******************************--%>
 
@@ -159,6 +159,25 @@
                     <asp:Button ID="btnAtras" runat="server" Text="ATRAS" CssClass="btn btn-success w-100" />
                 </div>
             </div>--%>
+
+
+   <%-- ********************************************************************************************************************** --%>
+
+  
+    
+    <asp:GridView ID="gvMedidores" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSuscriptor" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="IDSuscriptor" HeaderText="IDSuscriptor" InsertVisible="False" ReadOnly="True" SortExpression="IDSuscriptor" />
+            <asp:BoundField DataField="IDMedidor" HeaderText="IDMedidor" SortExpression="IDMedidor" />
+            <asp:BoundField DataField="Ubicacion" HeaderText="Ubicacion" SortExpression="Ubicacion" />
+            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
+        </Columns>
+    </asp:GridView>
+
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GestionAsadaConnectionString %>" ProviderName="<%$ ConnectionStrings:GestionAsadaConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Medidor]"></asp:SqlDataSource>
+
+
 </asp:Content>
 
 
