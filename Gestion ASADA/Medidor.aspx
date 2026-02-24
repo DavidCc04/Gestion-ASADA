@@ -8,28 +8,28 @@
     <%--*************************   ID suscriptor    *******************************--%>
 
     <div class="form-group">
-        <asp:Label ID="lblIDsuscriptor" runat="server" Text="ID de Suscriptor:" CssClass="control-label"></asp:Label>
-        <asp:TextBox ID="txtIDsuscriptor" runat="server" placeholder="0001" CssClass="form-control"></asp:TextBox>
+        <asp:Label ID="lblsuscriptor" runat="server" Text="ID de Suscriptor:" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="txtSuscriptor" runat="server" placeholder="001" CssClass="form-control"></asp:TextBox>
     </div>
 
     <%--* Validacion suscriptor *--%>
-    <asp:RequiredFieldValidator ID="rfvIDsuscriptor" runat="server"
+    <asp:RequiredFieldValidator ID="rfvsuscriptor" runat="server"
         ErrorMessage="Es necesario indicar el ID de suscriptor."
-        ControlToValidate="txtIDsuscriptor" Display="Dynamic" CssClass="text-danger">
+        ControlToValidate="txtSuscriptor" Display="Dynamic" CssClass="text-danger">
     </asp:RequiredFieldValidator>
 
 
     <%--*************************   ID Medidor    *******************************--%>
     
     <div class="form-group">
-        <asp:Label ID="lblIDmedidor" runat="server" Text="ID de Medidor" CssClass="control-label"></asp:Label>
-        <asp:TextBox ID="txtIDmedidor" runat="server" placeholder="San Francisco" CssClass="form-control"></asp:TextBox>
+        <asp:Label ID="lblMedidor" runat="server" Text="ID de Medidor" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="txtMedidor" runat="server" placeholder="0001" CssClass="form-control"></asp:TextBox>
     </div>
 
     <%--* Validacion medidor *--%>
-    <asp:RequiredFieldValidator ID="rfvIDmedidor" runat="server"
+    <asp:RequiredFieldValidator ID="rfvmedidor" runat="server"
         ErrorMessage="Es necesario indicar el ID de Medidor."
-        ControlToValidate="txtIDmedidor" Display="Dynamic" CssClass="text-danger">
+        ControlToValidate="txtMedidor" Display="Dynamic" CssClass="text-danger">
     </asp:RequiredFieldValidator>
     
 
@@ -91,43 +91,7 @@
 
 
 
-    <%--  <div class="row justify-content-center mt-5">
-    <div class="col-md-6">
-
-        <div class="card p-4" style="background-color:#8fa2bd;">
-            
-            
-            <div class="row mb-3">
-                <div class="col-6">
-                    <asp:Button ID="btnConsultar" runat="server" Text="CONSULTAR" CssClass="btn btn-light w-100" />
-                </div>
-                <div class="col-6">
-                    <asp:Button ID="btnLimpiar" runat="server" Text="LIMPIAR" CssClass="btn btn-light w-100" />
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-6">
-                    <asp:Button ID="btnModificar" runat="server" Text="MODIFICAR" CssClass="btn btn-light w-100" />
-                </div>
-                <div class="col-6">
-                    <asp:Button ID="btnEliminar" runat="server" Text="ELIMINAR" CssClass="btn btn-light w-100" />
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <asp:Button ID="btnInsertar" runat="server" Text="INSERTAR" CssClass="btn btn-light w-100" />
-                </div>
-                <div class="col-6">
-                    <asp:Button ID="btnAtras" runat="server" Text="ATRAS" CssClass="btn btn-light w-100" />
-                </div>
-            </div>
-            
-        </div>
-
-    </div>
-</div>--%>
+   
 
 
 
@@ -165,10 +129,10 @@
 
   
     
-    <asp:GridView ID="gvMedidores" runat="server" AutoGenerateColumns="False" DataKeyNames="IDSuscriptor" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="gvMedidores" runat="server" AutoGenerateColumns="False" DataKeyNames="Suscriptor" DataSourceID="SqlDataSource1">
         <Columns>
-            <asp:BoundField DataField="IDSuscriptor" HeaderText="IDSuscriptor" InsertVisible="False" ReadOnly="True" SortExpression="IDSuscriptor" />
-            <asp:BoundField DataField="IDMedidor" HeaderText="IDMedidor" SortExpression="IDMedidor" />
+            <asp:BoundField DataField="Suscriptor" HeaderText="Suscriptor" InsertVisible="False" ReadOnly="True" SortExpression="Suscriptor" />
+            <asp:BoundField DataField="Medidor" HeaderText="Medidor" SortExpression="Medidor" />
             <asp:BoundField DataField="Ubicacion" HeaderText="Ubicacion" SortExpression="Ubicacion" />
             <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
         </Columns>

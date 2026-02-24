@@ -14,58 +14,58 @@ Option Explicit On
 Partial Public Class Medidor
 
     '''<summary>
-    '''Control lblIDsuscriptor.
+    '''Control lblsuscriptor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblIDsuscriptor As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblsuscriptor As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtIDsuscriptor.
+    '''Control txtSuscriptor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtIDsuscriptor As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtSuscriptor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control rfvIDsuscriptor.
+    '''Control rfvsuscriptor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents rfvIDsuscriptor As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents rfvsuscriptor As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''Control lblIDmedidor.
+    '''Control lblMedidor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblIDmedidor As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblMedidor As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtIDmedidor.
+    '''Control txtMedidor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtIDmedidor As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtMedidor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control rfvIDmedidor.
+    '''Control rfvmedidor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents rfvIDmedidor As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents rfvmedidor As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control lblUbicacion.

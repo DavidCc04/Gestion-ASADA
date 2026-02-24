@@ -2,8 +2,8 @@
 
     Public Class Medidor
 
-        Private _medidorId As Integer
-        Private _suscripcion As String
+        Private _suscriptor As String
+        Private _medidor As Integer
         Private _ubicacion As String
         Private _estado As String
 
@@ -11,29 +11,30 @@
         Public Sub New()
         End Sub
 
-        Public Sub New(medidorId As Integer, suscripcion As String, ubicacion As String, estado As String)
-            _medidorId = medidorId
-            _suscripcion = suscripcion
+        Public Sub New(medidor As Integer, suscriptor As String, ubicacion As String, estado As String)
+
+            _suscriptor = suscriptor
+            _medidor = medidor
             _ubicacion = ubicacion
             _estado = estado
 
         End Sub
 
-        Public Property MedidorId As Integer
+        Public Property Suscriptor As String
             Get
-                Return _medidorId
+                Return _suscriptor
             End Get
-            Set(value As Integer)
-                _medidorId = value
+            Set(value As String)
+                _suscriptor = value
             End Set
         End Property
 
-        Public Property Suscripcion As String
+        Public Property Medidor As Integer
             Get
-                Return _suscripcion
+                Return _medidor
             End Get
-            Set(value As String)
-                _suscripcion = value
+            Set(value As Integer)
+                _medidor = value
             End Set
         End Property
 
@@ -57,7 +58,7 @@
 
 
         Public Function Resumen() As String
-            Return $"Medidor: {Suscripcion} -  {MedidorId} - {Ubicacion} - {Estado}"
+            Return $"Medidor: {Suscriptor} -  {Medidor} - {Ubicacion} - {Estado}"
         End Function
 
     End Class

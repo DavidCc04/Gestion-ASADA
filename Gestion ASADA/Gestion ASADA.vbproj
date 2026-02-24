@@ -277,6 +277,7 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Utils\Dbhelper.vb" />
+    <Compile Include="Utils\Swalutils.vb" />
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
